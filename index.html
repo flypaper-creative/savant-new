@@ -3,162 +3,305 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Savant New | Future Studio</title>
-  <meta name="description" content="Awwwards-inspired creative digital studio landing page." />
+  <title>Savant New | Cinematic Digital Studio</title>
+  <meta
+    name="description"
+    content="Savant New creates atmospheric, cinematic digital experiences with a hyperreal 3D hero built around logo7.glb."
+  />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Syne:wght@500;700;800&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="page-haze page-haze--left" aria-hidden="true"></div>
+  <div class="page-haze page-haze--right" aria-hidden="true"></div>
   <div class="noise" aria-hidden="true"></div>
   <div class="cursor-glow" aria-hidden="true"></div>
+
   <div class="preloader" id="preloader" role="status" aria-live="polite" aria-label="Loading experience">
     <div class="preloader__scene" id="preloader-scene" aria-hidden="true"></div>
-    <div class="preloader__vignette" aria-hidden="true"></div>
-    <div class="preloader__hud">
-      <div class="preloader__hud-inner" id="preloader-hud-inner">
-        <p class="preloader__eyebrow">Savant New / Hero Asset</p>
-        <h2 class="preloader__title">Calibrating logo7.glb</h2>
-        <p class="preloader__label">Studio lighting, material response, and hero framing.</p>
-        <div class="preloader__progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Loading progress">
+    <div class="preloader__scrim" aria-hidden="true"></div>
+    <div class="preloader__panel">
+      <div class="preloader__panel-inner" id="preloader-panel-inner">
+        <p class="preloader__eyebrow">Savant New / Atmosphere Pass</p>
+        <h2 class="preloader__title">Bringing logo7.glb into focus</h2>
+        <p class="preloader__label">
+          Loading the hero sculpture, calibrated studio lighting, and the cinematic motion language of the page.
+        </p>
+        <div
+          class="preloader__progress"
+          role="progressbar"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          aria-valuenow="0"
+          aria-label="Loading progress"
+        >
           <div class="preloader__progress-fill" id="preloader-progress-fill"></div>
         </div>
       </div>
       <button class="preloader__enter-btn" id="preloader-enter" aria-label="Enter the experience" tabindex="-1">
-        <span class="preloader__enter-icon" aria-hidden="true">&#8594;</span>
         <span>Enter Experience</span>
+        <span class="preloader__enter-icon" aria-hidden="true">&#8594;</span>
       </button>
     </div>
   </div>
 
   <header class="site-header">
-    <a class="brand" href="#home">
+    <a class="brand" href="#home" aria-label="Savant New home">
       <span class="brand-mark">SN</span>
-      <span>Savant New</span>
+      <span class="brand-copy">
+        <strong>Savant New</strong>
+        <span>Cinematic digital studio</span>
+      </span>
     </a>
     <nav class="nav">
       <a href="#work">Work</a>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a class="cta" href="#contact">Start a Project</a>
+      <a href="#services">Capabilities</a>
+      <a href="#about">Philosophy</a>
+      <a href="#contact" class="cta">Start a Project</a>
     </nav>
   </header>
 
   <main id="home">
     <section class="hero section-reveal">
-      <div class="hero__content">
-        <p class="eyebrow">Digital Product Studio</p>
+      <div class="hero__content" data-parallax="18">
+        <p class="eyebrow">Flagship digital atmospheres</p>
         <h1>
-          We build hero moments that
-          <span class="accent">look physically real</span>
+          Hyperreal experiences
+          <span class="accent">with cinematic gravity</span>
         </h1>
         <p class="hero-copy">
-          Strategy, interface craft, and high-fidelity motion built around a flagship 3D brand system.
-          The hero now centers the actual logo7.glb asset instead of decorative filler.
+          We choreograph story, interface, and motion like a film sequence so every brand touchpoint feels tactile,
+          premium, and unforgettable. The centerpiece is the actual <strong>logo7.glb</strong> asset, treated like a hero object under
+          physical light instead of decorative filler.
         </p>
         <div class="hero-actions">
-          <a class="button primary" href="#work">View Projects</a>
-          <a class="button ghost" href="#contact">Book Discovery Call</a>
+          <a class="button button--primary" href="#work">View flagship work</a>
+          <a class="button button--ghost" href="#contact">Book discovery call</a>
         </div>
-        <div class="hero-metrics" aria-label="Key studio metrics">
-          <article>
+        <div class="hero__note surface">
+          <p class="hero__note-label">Current art direction</p>
+          <p>
+            Deep-space restraint, soft bloom, reflective materials, editorial spacing, and motion that settles with intent.
+          </p>
+        </div>
+        <div class="hero-metrics" aria-label="Studio metrics">
+          <article class="surface">
             <p class="metric-value">32</p>
-            <p class="metric-label">Global Launches</p>
+            <p class="metric-label">Global launches with cinematic motion systems</p>
           </article>
-          <article>
+          <article class="surface">
             <p class="metric-value">11</p>
-            <p class="metric-label">Industry Awards</p>
+            <p class="metric-label">Award juries and recognition moments shaped by experience craft</p>
           </article>
-          <article>
+          <article class="surface">
             <p class="metric-value">4.9</p>
-            <p class="metric-label">Avg. Client Rating</p>
+            <p class="metric-label">Average client rating across strategy, design, and delivery</p>
           </article>
         </div>
       </div>
-      <div class="hero__visual" aria-hidden="true">
-        <div class="hero__visual-backdrop"></div>
-        <div class="hero__model-shell">
+
+      <div class="hero__visual" data-parallax="-14">
+        <div class="hero__spotlight" aria-hidden="true"></div>
+        <div class="hero__floating-card surface">
+          <p class="hero__floating-label">Lighting study</p>
+          <strong>Real-time hero composition</strong>
+          <span>Specular highlights, shadow floor, subtle orbital drift, and responsive camera parallax.</span>
+        </div>
+        <div class="hero__model-shell surface">
           <div class="hero__model-meta">
-            <span>Hero Asset</span>
-            <span>logo7.glb</span>
+            <span>Hero asset</span>
+            <span>public/assets/logo7/logo7.glb</span>
           </div>
-          <div class="hero__model" id="hero-logo-scene"></div>
+          <div class="hero__model" id="hero-logo-scene" aria-hidden="true"></div>
           <div class="hero__model-caption">
             <p>Realtime brand sculpture</p>
-            <span>Physically lit / interactive / hero composition</span>
+            <span>Material polish / physical light / atmospheric staging</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="work section-reveal" id="work">
+    <section class="feature-strip section-reveal">
+      <article class="surface" data-tilt>
+        <p class="feature-strip__label">Direction</p>
+        <h2>Editorial framing with the weight of a title sequence.</h2>
+      </article>
+      <article class="surface" data-tilt>
+        <p class="feature-strip__label">Materiality</p>
+        <h2>Glass, metal, haze, and subtle reflection instead of flat gradient blocks.</h2>
+      </article>
+      <article class="surface" data-tilt>
+        <p class="feature-strip__label">Motion</p>
+        <h2>Slower reveals, softer falloff, and choreographed transitions that feel premium.</h2>
+      </article>
+    </section>
+
+    <section class="showcase section-reveal" id="work">
       <div class="section-head">
-        <p class="eyebrow">Selected Work</p>
-        <h2>Immersive products for ambitious brands.</h2>
+        <div>
+          <p class="eyebrow">Selected work</p>
+          <h2>Every frame should feel intentional.</h2>
+        </div>
+        <p class="section-head__copy">
+          Interfaces are staged like environments: foreground, atmosphere, light, and narrative hierarchy all working
+          together.
+        </p>
       </div>
-      <div class="project-grid">
-        <article class="project-card tilt-card">
-          <p class="project-index">01</p>
-          <h3>Atlas Mobility</h3>
-          <p>Electric vehicle platform with real-time trip intelligence.</p>
-          <a href="projects/atlas.html">Case Study</a>
+
+      <div class="showcase-grid">
+        <article class="project-card surface" data-tilt>
+          <div class="project-card__media project-card__media--atlas"></div>
+          <div class="project-card__body">
+            <p class="project-index">01 / Atlas Mobility</p>
+            <h3>Mobility intelligence with a midnight-luxury feel.</h3>
+            <p>
+              Turned dense EV telemetry into a cinematic control surface with depth layers, motion pacing, and polished
+              conversion moments.
+            </p>
+            <a href="projects/atlas.html">View case study</a>
+          </div>
         </article>
-        <article class="project-card tilt-card">
-          <p class="project-index">02</p>
-          <h3>Nebula Finance</h3>
-          <p>Neobank experience with onboarding optimized to 42% lift.</p>
-          <a href="projects/nebula.html">Case Study</a>
+
+        <article class="project-card surface" data-tilt>
+          <div class="project-card__media project-card__media--nebula"></div>
+          <div class="project-card__body">
+            <p class="project-index">02 / Nebula Finance</p>
+            <h3>Onboarding that feels more like a premium product launch than a form.</h3>
+            <p>
+              Built a high-trust visual system with cinematic contrast, controlled light, and tactile card choreography.
+            </p>
+            <a href="projects/nebula.html">View case study</a>
+          </div>
         </article>
-        <article class="project-card tilt-card">
-          <p class="project-index">03</p>
-          <h3>Origin Health</h3>
-          <p>Patient-centered portal with fluid, accessible interactions.</p>
-          <a href="projects/origin.html">Case Study</a>
+
+        <article class="project-card surface" data-tilt>
+          <div class="project-card__media project-card__media--origin"></div>
+          <div class="project-card__body">
+            <p class="project-index">03 / Origin Health</p>
+            <h3>Human-centered clarity without losing atmosphere.</h3>
+            <p>
+              Balanced accessibility and emotional depth with layered surfaces, warm highlights, and readable motion.
+            </p>
+            <a href="projects/origin.html">View case study</a>
+          </div>
         </article>
       </div>
     </section>
 
-    <section class="services section-reveal" id="services">
-      <div class="section-head">
+    <section class="capabilities section-reveal" id="services">
+      <div class="section-head section-head--stacked">
         <p class="eyebrow">Capabilities</p>
-        <h2>From positioning to shipped interface systems.</h2>
+        <h2>We build the strategy, image system, and front-end performance as one continuous experience.</h2>
       </div>
-      <div class="service-list">
-        <article>
-          <h3>Brand Direction</h3>
-          <p>Naming, messaging, and visual narratives built for differentiation.</p>
+
+      <div class="capability-grid">
+        <article class="capability surface" data-tilt>
+          <p class="capability__index">01</p>
+          <h3>Brand worldbuilding</h3>
+          <p>Naming, tone, visual language, and reference systems that give the digital product a believable universe.</p>
         </article>
-        <article>
-          <h3>Experience Design</h3>
-          <p>User journeys, wireframes, and interfaces shaped by behavior data.</p>
+        <article class="capability surface" data-tilt>
+          <p class="capability__index">02</p>
+          <h3>Experience choreography</h3>
+          <p>IA, wireframes, interaction pacing, and cinematic sequencing tuned for clarity and emotional pull.</p>
         </article>
-        <article>
-          <h3>Development</h3>
-          <p>High-performance frontends with handcrafted animations and clean code.</p>
+        <article class="capability surface" data-tilt>
+          <p class="capability__index">03</p>
+          <h3>Front-end polish</h3>
+          <p>Performance-aware motion, refined surfaces, and implementation detail that preserves the art direction.</p>
         </article>
       </div>
     </section>
 
-    <section class="about section-reveal" id="about">
-      <p class="eyebrow">Our Philosophy</p>
-      <h2>Clarity over clutter. Atmosphere over trends.</h2>
-      <p>
-        Every project begins with narrative and ends with measurable outcomes.
-        We blend brand depth with technical precision to create digital products
-        users actually remember.
-      </p>
+    <section class="philosophy section-reveal" id="about">
+      <div class="philosophy__statement surface">
+        <p class="eyebrow">Philosophy</p>
+        <h2>Atmosphere is a usability tool when it sharpens focus instead of fighting it.</h2>
+        <p>
+          We use contrast, scale, motion, and material cues to guide attention with the same precision a cinematographer
+          uses to frame a scene.
+        </p>
+      </div>
+
+      <div class="principles">
+        <article class="surface" data-tilt>
+          <h3>Depth with discipline</h3>
+          <p>Every glow, shadow, and reflection exists to support hierarchy, not to decorate empty space.</p>
+        </article>
+        <article class="surface" data-tilt>
+          <h3>Motion with intent</h3>
+          <p>Transitions ease into place, settle confidently, and never distract from the brand story.</p>
+        </article>
+        <article class="surface" data-tilt>
+          <h3>Systems that hold up</h3>
+          <p>Design direction, UI kits, and implementation details are built to scale without losing atmosphere.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="process section-reveal">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Process</p>
+          <h2>From first frame to shipped experience.</h2>
+        </div>
+        <p class="section-head__copy">
+          The final polish only works because the structure underneath it is deliberate, measurable, and technically clean.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline__step surface" data-tilt>
+          <span>01</span>
+          <h3>Reference and narrative</h3>
+          <p>We define the emotional territory, visual references, and the exact kind of tension the page should carry.</p>
+        </article>
+        <article class="timeline__step surface" data-tilt>
+          <span>02</span>
+          <h3>Experience architecture</h3>
+          <p>Messaging, content rhythm, and interface hierarchy are arranged before polish is added.</p>
+        </article>
+        <article class="timeline__step surface" data-tilt>
+          <span>03</span>
+          <h3>Motion and material pass</h3>
+          <p>We refine light, depth, transitions, and hover behavior until the product feels physically believable.</p>
+        </article>
+        <article class="timeline__step surface" data-tilt>
+          <span>04</span>
+          <h3>Delivery and refinement</h3>
+          <p>We ship the system cleanly and tune the final moments so the experience feels premium at launch.</p>
+        </article>
+      </div>
     </section>
 
     <section class="contact section-reveal" id="contact">
-      <p class="eyebrow">Contact</p>
-      <h2>Let us shape your next flagship experience.</h2>
-      <a class="button primary" href="mailto:hello@savantnew.studio">hello@savantnew.studio</a>
+      <div class="contact__panel surface">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Ready to make the next version feel monumental?</h2>
+          <p class="contact__copy">
+            If your current site looks acceptable but doesn’t feel unforgettable, we can rebuild the atmosphere around it.
+          </p>
+        </div>
+        <div class="contact__actions">
+          <a class="button button--primary" href="mailto:hello@savantnew.studio">hello@savantnew.studio</a>
+          <div class="contact__meta">
+            <span>Realtime art direction</span>
+            <span>Brand-first implementation</span>
+            <span>Motion systems that convert</span>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>2026 Savant New. Designed to stand out.</p>
+    <p>2026 Savant New / Crafted for atmosphere, clarity, and recall.</p>
   </footer>
 
   <script src="script.js"></script>
