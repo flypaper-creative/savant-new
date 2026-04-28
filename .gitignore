@@ -36,3 +36,15 @@ mayorgate_context.txt
 mayorgate_final.rtf
 mempalace_input/
 mayorgate_context.txt
+
+# local case corpus / MemPalace
+mayorgate_final.rtf
+mempalace_input/
+memory/
+mayorgate_context.txt
+.mempalace/
+.mempalace_sources/
+.mempalace_exports/
+.venv/
+entities.json
+mempalace.yaml
