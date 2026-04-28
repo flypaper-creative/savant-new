@@ -1,0 +1,10 @@
+{
+  "name": "savant-new",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Awwwards-inspired multi-page studio website",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "dev": "python3 -m http.server 8080"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "palette": {
+    "bg_base": "#05070b",
+    "bg_elevated": "#0b0f14",
+    "bg_panel": "#10161e",
+    "text_primary": "#f5f7fb",
+    "text_secondary": "rgba(245,247,251,0.58)",
+    "line_soft": "rgba(255,255,255,0.08)",
+    "chrome_high": "#f6f9ff",
+    "chrome_mid": "#8e98a8",
+    "chrome_dark": "#20262f",
+    "obsidian_0": "#020202",
+    "obsidian_1": "#08090b",
+    "obsidian_2": "#11151a",
+    "gold_hot": "#ffb100",
+    "gold_core": "#ffd769",
+    "gold_white": "#fff4cf"
+  },
+  "ui_direction": {
+    "cards": "denser_darker_sharper",
+    "buttons": "glass_metal_black_with_gold_edge",
+    "nav": "minimal_corporate_hud",
+    "background": "controlled_streaks_not_noisy",
+    "motion": "slow_heavy_confident"
+  },
+  "do_not_do": [
+    "generic_neon_gradient_toy_look",
+    "thin_flat_svg_logo_fakes",
+    "random_rainbow_accents",
+    "soft_blob_ui"
+  ]
+}

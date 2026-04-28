@@ -1,0 +1,35 @@
+{
+  "id": "savant-logo7",
+  "version": 1,
+  "description": "Primary hero asset contract for Savant photoreal runtime.",
+  "style": {
+    "material_family": "faceted_obsidian_black_chrome",
+    "emissive_family": "savant_gold",
+    "finish": "high-polish_corporate_cinematic",
+    "reference_variant": "logo_9_bottom_right"
+  },
+  "files": {
+    "logo_glb": "/assets/logo7/logo7.glb",
+    "ring_glb": "/assets/ring/portal_ring.glb",
+    "albedo": "/assets/logo7/logo7_albedo.webp",
+    "normal": "/assets/logo7/logo7_normal.webp",
+    "roughness": "/assets/logo7/logo7_roughness.webp",
+    "ao": "/assets/logo7/logo7_ao.webp",
+    "emissive": "/assets/logo7/logo7_emissive.webp",
+    "environment_hdr": "/assets/hdr/studio_gold_dark.hdr"
+  },
+  "runtime": {
+    "rotation_axis": "z",
+    "rotation_speed": 0.08,
+    "loader_ring_progress_drives_emissive": true,
+    "site_ui_inherits_material_language": true
+  },
+  "lighting": {
+    "key": "large_softbox_overhead_front",
+    "rim_left": "cool_white",
+    "rim_right": "warm_gold",
+    "fill": "very_low",
+    "flare": "anamorphic_subtle",
+    "fog": "thin_volumetric"
+  }
+}
