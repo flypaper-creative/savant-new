@@ -1,0 +1,20 @@
+wing: savant_new
+rooms:
+- name: public
+  description: Files from public/
+  keywords:
+  - public
+  - public
+- name: projects
+  description: Files from projects/
+  keywords:
+  - projects
+  - projects
+- name: design
+  description: Files from assets/
+  keywords:
+  - design
+  - assets
+- name: general
+  description: Files that don't fit other rooms
+  keywords: []

@@ -5,6 +5,9 @@
   "description": "Awwwards-inspired multi-page studio website",
   "scripts": {
     "start": "python3 -m http.server 8080",
-    "dev": "python3 -m http.server 8080"
+    "dev": "python3 -m http.server 8080",
+    "sync:install": "bash scripts/install-git-hooks.sh",
+    "sync:once": "bash scripts/git-auto-sync.sh once",
+    "sync:start": "bash scripts/git-auto-sync.sh loop"
   }
 }

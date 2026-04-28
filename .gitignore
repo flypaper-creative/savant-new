@@ -8,43 +8,19 @@
 !.env.example
 !**/.env.example
 
-# environment / secrets
-.env
-.env.*
-**/.env
-**/.env.*
-!.env.example
-!**/.env.example
-
 # Python virtual env
 .venv/
 venv/
 __pycache__/
 *.pyc
 
-# MemPalace local memory
-.mempalace/
-memory/
-mayorgate_context.txt
-
-# local secrets
-.env
-.env.*
-!.env.example
-
-# local case corpus
-mayorgate_final.rtf
-mempalace_input/
-mayorgate_context.txt
-
-# local case corpus / MemPalace
-mayorgate_final.rtf
-mempalace_input/
-memory/
-mayorgate_context.txt
+# MemPalace local state
 .mempalace/
 .mempalace_sources/
 .mempalace_exports/
-.venv/
-entities.json
-mempalace.yaml
+memory/
+
+# local case corpus
+mayorgate_context.txt
+mayorgate_final.rtf
+mempalace_input/

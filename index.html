@@ -15,9 +15,20 @@
   <div class="cursor-glow" aria-hidden="true"></div>
   <div class="preloader" id="preloader" role="status" aria-live="polite" aria-label="Loading experience">
     <div class="preloader__scene" id="preloader-scene" aria-hidden="true"></div>
+    <div class="preloader__vignette" aria-hidden="true"></div>
     <div class="preloader__hud">
-      <p class="preloader__label">Preparing the experience</p>
-      <p class="preloader__timer">12 second cinematic intro</p>
+      <div class="preloader__hud-inner" id="preloader-hud-inner">
+        <p class="preloader__eyebrow">Savant New / Hero Asset</p>
+        <h2 class="preloader__title">Calibrating logo7.glb</h2>
+        <p class="preloader__label">Studio lighting, material response, and hero framing.</p>
+        <div class="preloader__progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Loading progress">
+          <div class="preloader__progress-fill" id="preloader-progress-fill"></div>
+        </div>
+      </div>
+      <button class="preloader__enter-btn" id="preloader-enter" aria-label="Enter the experience" tabindex="-1">
+        <span class="preloader__enter-icon" aria-hidden="true">&#8594;</span>
+        <span>Enter Experience</span>
+      </button>
     </div>
   </div>
 
@@ -36,32 +47,48 @@
 
   <main id="home">
     <section class="hero section-reveal">
-      <p class="eyebrow">Digital Product Studio</p>
-      <h1>
-        We design websites that
-        <span class="accent">feel alive</span>
-      </h1>
-      <p class="hero-copy">
-        Built with sharp strategy, cinematic motion, and conversion-first UX.
-        Inspired by award-winning digital experiences.
-      </p>
-      <div class="hero-actions">
-        <a class="button primary" href="#work">View Projects</a>
-        <a class="button ghost" href="#contact">Book Discovery Call</a>
+      <div class="hero__content">
+        <p class="eyebrow">Digital Product Studio</p>
+        <h1>
+          We build hero moments that
+          <span class="accent">look physically real</span>
+        </h1>
+        <p class="hero-copy">
+          Strategy, interface craft, and high-fidelity motion built around a flagship 3D brand system.
+          The hero now centers the actual logo7.glb asset instead of decorative filler.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">View Projects</a>
+          <a class="button ghost" href="#contact">Book Discovery Call</a>
+        </div>
+        <div class="hero-metrics" aria-label="Key studio metrics">
+          <article>
+            <p class="metric-value">32</p>
+            <p class="metric-label">Global Launches</p>
+          </article>
+          <article>
+            <p class="metric-value">11</p>
+            <p class="metric-label">Industry Awards</p>
+          </article>
+          <article>
+            <p class="metric-value">4.9</p>
+            <p class="metric-label">Avg. Client Rating</p>
+          </article>
+        </div>
       </div>
-      <div class="hero-metrics" aria-label="Key studio metrics">
-        <article>
-          <p class="metric-value">32</p>
-          <p class="metric-label">Global Launches</p>
-        </article>
-        <article>
-          <p class="metric-value">11</p>
-          <p class="metric-label">Industry Awards</p>
-        </article>
-        <article>
-          <p class="metric-value">4.9</p>
-          <p class="metric-label">Avg. Client Rating</p>
-        </article>
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero__visual-backdrop"></div>
+        <div class="hero__model-shell">
+          <div class="hero__model-meta">
+            <span>Hero Asset</span>
+            <span>logo7.glb</span>
+          </div>
+          <div class="hero__model" id="hero-logo-scene"></div>
+          <div class="hero__model-caption">
+            <p>Realtime brand sculpture</p>
+            <span>Physically lit / interactive / hero composition</span>
+          </div>
+        </div>
       </div>
     </section>
 
