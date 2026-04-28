@@ -1,3 +1,51 @@
+const PRELOADER_DURATION_MS = 12000;
+const PRELOADER_EXIT_MS = 900;
+
+function setupPreloader() {
+  const preloader = document.querySelector('#preloader');
+
+  if (!preloader) {
+    return;
+  }
+
+  const sceneMount = preloader.querySelector('#preloader-scene');
+  let disposeScene = () => {};
+
+  document.body.classList.add('is-preloading');
+
+  if (sceneMount) {
+    import('./public/logo3d/logo3d.js')
+      .then(({ initLogo3D }) => {
+        const cleanup = initLogo3D(sceneMount);
+        if (typeof cleanup === 'function') {
+          disposeScene = cleanup;
+        }
+      })
+      .catch(() => {
+        preloader.classList.add('preloader--fallback');
+      });
+  }
+
+  const teardownPreloader = () => {
+    preloader.classList.add('preloader--done');
+    document.body.classList.remove('is-preloading');
+
+    const removePreloader = () => {
+      disposeScene();
+      preloader.remove();
+    };
+
+    preloader.addEventListener('transitionend', removePreloader, { once: true });
+    window.setTimeout(removePreloader, PRELOADER_EXIT_MS + 250);
+  };
+
+  window.setTimeout(() => {
+    window.requestAnimationFrame(teardownPreloader);
+  }, PRELOADER_DURATION_MS);
+}
+
+setupPreloader();
+
 const revealItems = document.querySelectorAll('.section-reveal');
 const cursorGlow = document.querySelector('.cursor-glow');
 const tiltCards = document.querySelectorAll('.tilt-card');
